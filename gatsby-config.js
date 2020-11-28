@@ -5,6 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+    /* Your site config here */
+    siteMetadata: {
+        title: 'Math-One App'
+    },
+    plugins: [
+        'gatsby-plugin-netlify-cms'
+    ],
 }

@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: img/
+
+collections:
+  - name: "session"
+    label: "Session"
+    folder: "src/session"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Level"
+        name: "level"
+        widget: "number"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+            
