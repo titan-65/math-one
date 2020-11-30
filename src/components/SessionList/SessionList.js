@@ -6,7 +6,7 @@ import SessionPost from '../SessionPost'
 export default function SesssionList() {
     const data = useStaticQuery(graphql`
     {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
             edges {
                 node {
                     id
@@ -22,7 +22,7 @@ export default function SesssionList() {
    `)
 
     return (
-        <div>
+        <div className="row">
             {data.allMarkdownRemark.edges.map(edge => (
                 <SessionPost
                     key={edge.node.id}

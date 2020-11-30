@@ -2,12 +2,12 @@ import '../global.css'
 
 import React from 'react'
 
-export default function Header() {
+export default function Header({title}) {
     return ( 
       <nav className="navbar navbar-inverse navbar-expand-lg bg-dark" role="navigation-demo">
             <div class="container">
               <div class="navbar-translate">
-                <a class="navbar-brand" href="#0">Navbar with notification</a>
+                    <a class="navbar-brand" href="#0">{title}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="navbar-toggler-icon"></span>

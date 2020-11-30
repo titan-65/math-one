@@ -19,10 +19,10 @@ const ImageBox = styled.div`
     overflow: hidden;
     border-radius: 4px;
 `
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
     return (
       <div>
-        <Header />
+        <Header title={title} />
         <div
           className="page-header header-filter"
           data-parallax="true"
