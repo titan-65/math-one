@@ -10,6 +10,15 @@ module.exports = {
         title: 'Math-One App'
     },
     plugins: [
-        'gatsby-plugin-netlify-cms'
-    ],
+        'gatsby-plugin-netlify-cms',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'session',
+                path: 'src/session'
+            }
+        },
+        'gatsby-transformer-remark',
+        'gatsby-plugin-styled-components'
+    ]
 }
