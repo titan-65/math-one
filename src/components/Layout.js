@@ -20,6 +20,8 @@ const ImageBox = styled.div`
     border-radius: 4px;
 `
 export default function Layout({ children, title }) {
+
+    // FIXME: Tweak the layout APi
     return (
       <div>
         <Header title={title} />

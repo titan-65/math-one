@@ -3,7 +3,7 @@ import {graphql, useStaticQuery} from 'gatsby'
 import React from 'react';
 import SessionPost from '../SessionPost'
 
-export default function SesssionList() {
+export default function SessionList() {
     const data = useStaticQuery(graphql`
     {
         allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
@@ -13,6 +13,9 @@ export default function SesssionList() {
                     frontmatter {
                         title
                         date(formatString: "MMMM D, YYYY")
+                    }
+                    fields {
+                        slug
                     }
                     excerpt
                 }
@@ -26,6 +29,7 @@ export default function SesssionList() {
             {data.allMarkdownRemark.edges.map(edge => (
                 <SessionPost
                     key={edge.node.id}
+                    slug={edge.node.fields.slug}
                     title={edge.node.frontmatter.title}
                     date={edge.node.frontmatter.date}
                     excerpt={edge.node.excerpt}

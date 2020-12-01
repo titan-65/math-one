@@ -5,6 +5,8 @@ import React from "react"
 import SessionList from '../components/SessionList/SessionList'
 
 export default function Home() {
+    // TODO: Create and additional functionalty in the web app
+    
     const data = useStaticQuery(graphql`
         {
             site {
