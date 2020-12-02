@@ -2,6 +2,7 @@
 title: Advanced Functions an Relations
 date: 2020-12-01T03:15:40.055Z
 level: 6
+contentKey: session
 ---
 <!--StartFragment-->
 

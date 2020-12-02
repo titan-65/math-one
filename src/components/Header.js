@@ -21,33 +21,11 @@ export default function Header({ title }) {
               <div className="collapse navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <a href="#pablo" class="nav-link">
-                      Discover
-                    </a>
+                    <Link to="/session" href="#pablo" class="nav-link">
+                      Sessions
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a href="#pablo" class="nav-link">
-                      Wishlist
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#pablo" class="btn btn-rose btn-raised btn-fab btn-round" data-toggle="dropdown">
-                      <i className="material-icons">email</i>
-                    </a>
-                  </li>
-                  <li className="dropdown nav-item">
-                    <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
-                      <div className="profile-photo-small">
-                        <img src="assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid"/>
-                      </div>
-                    </a>
-                    <div className="dropdown-menu dropdown-menu-right">
-                      <h6 className="dropdown-header">Dropdown header</h6>
-                      <a href="#pablo" class="dropdown-item">Me</a>
-                      <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
-                      <a href="#pablo" class="dropdown-item">Sign out</a>
-                    </div>
-                  </li>
+
                 </ul>
               </div>
             </div>

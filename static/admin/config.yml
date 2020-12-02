@@ -12,6 +12,9 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - label: "contentKey"
+        widget: "hidden"
+        default: "session"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -24,4 +27,21 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-            
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pageData/index.md"
+        label: "Index Page"
+        name: "index-page"
+        fields:
+          - name: "contentKey"
+            widget: "hidden"
+            default: "indexPage"
+          - label: "Tagline"
+            name: "tagline"
+            widget: "string"
+          - label: "Hero Image"
+            name: "Hero Image"
+            widget: "image"
+
+

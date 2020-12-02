@@ -6,7 +6,11 @@ import SessionPost from '../SessionPost'
 export default function SessionList() {
     const data = useStaticQuery(graphql`
     {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        allMarkdownRemark(
+            sort: { fields: frontmatter___date, order: DESC }
+            filter: { frontmatter: { contentKey: { eq: "session" }}}
+            limit: 3
+        ) {
             edges {
                 node {
                     id
