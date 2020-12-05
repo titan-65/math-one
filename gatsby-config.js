@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+import dotenv from 'dotenv'
+
+dotenv.config({ path: 'env' })
 
 module.exports = {
     /* Your site config here */
@@ -24,6 +27,15 @@ module.exports = {
                 name: 'pageData',
                 path: 'src/pageData'
             }
+        },
+        {
+            resolve: 'gatsby-source-sanity',
+            options: {
+                projectId: process.env.SANITY_PORJECT_ID,
+                dataset: process.env.DATASET,
+                token: process.env.SANITY_TOKEN
+            }
+
         },
         'gatsby-transformer-remark',
         'gatsby-plugin-styled-components'
