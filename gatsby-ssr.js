@@ -6,22 +6,30 @@ const HtmlAttributes = {
 }
 
 const HeadComponents = [
-        <script src="/js/material-kit.min_v=2.2.0.js" type="text/javascript"/>,
-    <script key="my-script" src="https://gatsby.dev/my-script" />,
-     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:400,700%7CMaterial+Icons" />,
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"></link>
-]
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>,
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+  ]
 
 const BodyAttributes = {
   "data-theme": "dark"
 }
 
+const PostBodyComponents = [
+  <script key="1" src={'js/material-kit.min_v=2.2.0.js'} type="text/javascript"/>,
+  <script type="text/javascript" src={'js/core/bootstrap-material-design.min.js'}/>,
+  <script type="text/javascript" src={'js/core/jquery.min.js'}/>,
+  <script type="text/javascript" src={'js/core/popper.min.js'}/>,
+  <script type="text/javascript" src={'js/core/popper.min.js'}/>
+]
+
 exports.onRenderBody = ({
   setHeadComponents,
   setHtmlAttributes,
-  setBodyAttributes
+  setBodyAttributes,
+  setPostBodyComponents,
 }, pluginOptions) => {
   setHtmlAttributes(HtmlAttributes)
   setHeadComponents(HeadComponents)
   setBodyAttributes(BodyAttributes)
+  setPostBodyComponents(PostBodyComponents)
 }

@@ -18,6 +18,13 @@ module.exports = {
                 path: 'src/session'
             }
         },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'pageData',
+                path: 'src/pageData'
+            }
+        },
         'gatsby-transformer-remark',
         'gatsby-plugin-styled-components'
     ]

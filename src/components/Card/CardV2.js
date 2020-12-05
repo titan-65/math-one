@@ -6,11 +6,11 @@ export default function CardV2({ title, date, excerpt, slug}) {
       <div className="card card-blog">
         <div className="card-header card-header-image"></div>
         <div className="card-body">
-          <h6 className="card-category text-success">{date}</h6>
+          <h6>{date}</h6>
           <Link to={slug}>
-            <h6 className="card-title">{title}</h6>
+            <h6>{title}</h6>
           </Link>
-          <p className="card-description">{excerpt}</p>
+          <p>{excerpt}</p>
         </div>
       </div>
     )

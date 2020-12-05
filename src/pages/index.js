@@ -6,18 +6,18 @@ import SessionList from '../components/SessionList/SessionList'
 
 export default function Home() {
     // TODO: Create and additional functionalty in the web app
-    
-    const data = useStaticQuery(graphql`
-        {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `)
+
+    // const data = useStaticQuery(graphql`
+    //     {
+    //         site {
+    //             siteMetadata {
+    //                 title
+    //             }
+    //         }
+    //     }
+    // `)
     return (
-      <Layout title={data.site.siteMetadata.title}>
+      <>
         <section className="container">
           <div className="row">
             <div className="col-md-8 ml-auto mr-auto">
@@ -42,6 +42,6 @@ export default function Home() {
             <SessionList />
           </div>
         </div>
-      </Layout>
+      </>
     )
 }
