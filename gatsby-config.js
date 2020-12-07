@@ -3,9 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-import dotenv from 'dotenv'
 
-dotenv.config({ path: 'env' })
+// require('dotenv').config({ path: `.env.${process.env.NODE_ENV}`, })
+require('dotenv').config({})
 
 module.exports = {
     /* Your site config here */
@@ -31,8 +31,9 @@ module.exports = {
         {
             resolve: 'gatsby-source-sanity',
             options: {
-                projectId: process.env.SANITY_PORJECT_ID,
-                dataset: process.env.DATASET,
+                projectId: `1j0elxyl`,
+                dataset: process.env.SANITY_DATASET,
+                watchMode: true,
                 token: process.env.SANITY_TOKEN
             }
 

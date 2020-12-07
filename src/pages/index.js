@@ -18,6 +18,37 @@ export default function Home() {
     // `)
     return (
       <>
+        <div
+          className="page-header"
+          data-parallax="true"
+          // style={{
+          //   backgroundImage: `url('https://images.unsplash.com/photo-1606318005254-bdb2bcd14d34?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80')`,
+          // }}
+        >
+          <div className="container">
+            {/*<div className="row">*/}
+            {/*  <div className="col-md-6">*/}
+            {/*    <h1 className="title">Your Story Starts With Us.</h1>*/}
+            {/*    <h4>*/}
+            {/*      Every landing page needs a small description after the big*/}
+            {/*      bold title, that&apos;s why we added this text here. Add here*/}
+            {/*      all the information that can make you or your product create*/}
+            {/*      the first impression.*/}
+            {/*    </h4>*/}
+            {/*    <br />*/}
+            {/*    <a*/}
+            {/*      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"*/}
+            {/*      target="_blank"*/}
+            {/*      class="btn btn-danger btn-raised btn-lg"*/}
+            {/*    >*/}
+            {/*      <i className="fa fa-play"></i> Watch video*/}
+            {/*    </a>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+
+
+          </div>
+        </div>
         <section className="container">
           <div className="row">
             <div className="col-md-8 ml-auto mr-auto">

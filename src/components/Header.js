@@ -26,6 +26,11 @@ export default function Header({ title }) {
                         Sessions
                       </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link to="/experience" href="#pablo" class="nav-link" style={{fontWeight: 700, fontSize: '1.2rem'}}>
+                        Experience
+                      </Link>
+                    </li>
 
                   </ul>
                 </div>
