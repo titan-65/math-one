@@ -38,6 +38,9 @@ module.exports = {
             }
 
         },
+        'gatsby-image',
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
         'gatsby-transformer-remark',
         'gatsby-plugin-styled-components'
     ]

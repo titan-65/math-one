@@ -12,6 +12,7 @@ export default function ExperienceList({experiences}) {
                     objective={experience.objective}
                     strand={experience.strand}
                     preview={experience.preview}
+                    imageHeader={experience.imageHeader}
                     level={experience.level}/>
       ))}
     </div>
